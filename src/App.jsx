@@ -12,10 +12,10 @@ function App() {
   return (
     <div className="App">
       <VanillaForm />
-      {/* <FormControlled /> */}
-      {/*  <FormUncontrolled />
+      <FormControlled />
+      <FormUncontrolled />
       {count % 2 === 1 && <Test />}
-      <button onClick={toggle}>Click me</button> */}
+      <button onClick={toggle}>Click me</button>
     </div>
   );
 }

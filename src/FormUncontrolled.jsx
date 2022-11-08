@@ -18,7 +18,7 @@ function FormUncontrolled() {
   }
   return (
     <form ref={formEl} onSubmit={test}>
-      <label>
+      <label className="formcontrol">
         E-mail
         <input type="email" name="email" required />
       </label>

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import styles from "./FormControlled.module.scss";
+console.log(styles);
 function FormControlled() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -23,13 +25,14 @@ function FormControlled() {
     });
   }
   return (
-    <div>
+    <div className={styles.form}>
       <h1>Hi there {name}</h1>
       <p>
-        Hey {name}, your personalized price is {age > 25 ? 1234 : 999},-
+        Hey {name}, your personalized price is{" "}
+        <span className={styles.price}>{age > 25 ? 1234 : 999},-</span>
       </p>
       <form onSubmit={submit}>
-        <label>
+        <label className={styles.formcontrol}>
           Name
           <input
             type="text"
